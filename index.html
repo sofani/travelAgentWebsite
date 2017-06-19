@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Travel Form Test</title>
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Elfay Travel Agent</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--adding css files-->
@@ -9,9 +10,11 @@
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css?v_1207">
     <!--adding js files-->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
@@ -22,15 +25,63 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 </head>
-    <body style="margin: 0;background: #a6691d">
-    <div class="twidget-container">
-        <div class="row">
-           <div>
-           </div>
-           <div>
-           </div>
-        </div>
-    </div>
+    <body>
+        <nav id="header-nav" class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="/" class="pull-left visible-md visible-lg">
+                <div id="logo-img"></div>
+              </a>
+
+              <div class="navbar-brand">
+                 <a href="/"><h1>ELFAY TRAVEL</h1></a>
+             
+              </div>
+
+              <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            
+            <div id="collapsable-nav" class="collapse navbar-collapse">
+               <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li id="navHomeButton" class="visible-xs active">
+                      <a href="/">
+                        <span class="glyphicon glyphicon-home"></span> Home</a>
+                    </li>
+                    <li id="navMenuButton">
+                      <a href="/menu">
+                        <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Destination</a>
+                    </li>
+                    <li>
+                      <a href="/upload">
+                        <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Testimontials</a>
+                    </li>
+                    <li id="phone" class="hidden-xs">
+                      <a href="tel:510-542-7312">
+                        <span>5105427312</span>
+                      </a>
+                    </li>
+              </ul><!-- #nav-list -->
+            </div><!-- .collapse .navbar-collapse -->
+          </div><!-- .container -->
+        </nav><!-- #header-nav -->
+
+      <br>
+      <br>
+
+
     <div class="twidget-container" id="twidget" style="width: 90%; height: 400px; border: 1px solid red;">
         
     </div>
