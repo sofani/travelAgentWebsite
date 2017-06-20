@@ -1,4 +1,7 @@
 /* reset.css start*/
+
+
+
 .twidget-container *{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
 div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
     margin: 0;
@@ -230,12 +233,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
     .twidget-tab-content .twidget-header {display: none;}
 }
 
-/*body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
-}*/
+
 
 /** HEADER **/
 #header-nav {
@@ -317,10 +315,11 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address {
+#hours, #address, #testimonials {
   line-height: 2;
+  color: white;
 }
-#hours > span, #address > span {
+#hours > span, #address > span, #testimonials >span{
   font-size: 1.3em;
 }
 #address p {
@@ -328,15 +327,19 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
   font-size: .8em;
   line-height: 1.8;
 }
-#testimonials {
+#address address {
   font-style: italic;
+
 }
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+.text-center {
+	color: white;
+}
 /* END FOOTER */
 
-
+.
 
 /* HOME PAGE */
 .container .jumbotron {
