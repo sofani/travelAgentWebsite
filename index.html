@@ -29,7 +29,7 @@
   <!--   <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
 
 </head>
-    <body style="background-color: #61122f">
+    <body style="background-color: #61122f; margin: 0;">
         <nav id="header-nav" class="navbar navbar-default" >
           <div class="container">
             <div class="navbar-header" >
@@ -95,22 +95,33 @@
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
-    <br>
+    
+     <div  class="twidget-container"  id="twidget"  style="width: 85%;"> </div>
+     <br>
     <div class="container" >
        <div class="row" >
           
-          <div class="col-lg-4 col-md-3 col-sm-3 col-xs-12 col-xxs-12" style="border: 2px solid red; border-radius: 5%; color: white;">
-                <h5>Choosing the right vacation is an important decision. Choosing the right agent is an even bigger decision. Don't leave your vacation to chance. Insist on the best... Elfay Travel.
-                Whether business or pleasure, Best Value Travel delivers. Internet Travel sites list hotels and destinations, but offer little else. Our years of experience in the industry will help you design the perfect traveling experience. From romantic getaways to large events, our experienced agents will handle all the details. Traveling does not need to be stressful. You can count on us for great value and dependable service.</h5>
+          <div  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12" id="map-tile">
+                <p>Choosing the right vacation is an important decision. Choosing the right agent is an even bigger decision. Don't leave your vacation to chance. Insist on the best... Elfay Travel.
+                Whether business or pleasure, Best Value Travel delivers. Internet Travel sites list hotels and destinations, but offer little else. Our years of experience in the industry will help you design the perfect traveling experience. From romantic getaways to large events, our experienced agents will handle all the details. Traveling does not need to be stressful. You can count on us for great value and dependable service.</p>
                   <h3>Leave the planning to us!</h3>
                   <ul style="margin-left: 10px; font-weight: bold;"> 
                      <li> Family Reunions </li>
                      <li> Honeymoons </li>
                      <li> Romantic Getaways,.....and more!!!</li>
                   </ul>
-                  <h5>We arrange travel by air, land and sea. We can arrange the perfect destination package including, resorts, Family Reunions, special  events, and attractions.</h5>
+                  <p>We arrange travel by air, land and sea. We can arrange the perfect destination package including, resorts, Family Reunions, special  events, and attractions.</p>
          </div>
-          <div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 col-xxs-12" class="twidget-container" id="twidget"> </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xxs-12">
+        <a href="https://www.google.com/maps/place/MLK+Cafe/@37.8287133,-122.2689846,20z/data=!4m12!1m6!3m5!1s0x80857e0887d33f0f:0x78d12b4ac5a94fe6!2sMLK+Cafe!8m2!3d37.828492!4d-122.2685733!3m4!1s0x80857e0887d33f0f:0x78d12b4ac5a94fe6!8m2!3d37.828492!4d-122.2685733?hl=en" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d393.918632857002!2d-122.2689846!3d37.8287133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857e0887d33f0f%3A0x78d12b4ac5a94fe6!2sMLK+Cafe!5e0!3m2!1sen!2sus!4v1484598122320" width="100%" height="312" frameborder="0" style="border:0" allowfullscreen></iframe>
+           
+           
+          </div>
+        </a>
+      </div>
+          
       </div>
     </div>
     
@@ -137,7 +148,7 @@
             </section>
             <section id="testimonials" class="col-sm-6">
                <span>Here's what our clients have to say:</span><br>
-              <p>When we arrived at our hotel, 13,000 miles away from home, and they didn't have our reservation on file, I immediately called Best value. Within minutes we were enjoying our comfortableroom. Now that's service!<br>
+              <p>When we arrived at our hotel, 13,000 miles away from home, and they didn't have our reservation on file, I immediately called Elfay Travel. Within minutes we were enjoying our comfortable room. Now that's service!<br>
                 Getenet Asefa<br>
                 San Jose, CA</p>
               <p>I love the service at Elfay Travel. They always respond to me quickly and have the answers I need. Thanks for everything!<br>
@@ -164,12 +175,16 @@
             function showDivs(n) {
               var i;
               var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
+              if (n > x.length) {
+                slideIndex = 1
+              }    
+              if (n < 1) {
+                slideIndex = x.length
+              }
               for (i = 0; i < x.length; i++) {
                  x[i].style.display = "none";  
               }
-              x[slideIndex-1].style.display = "block";  
+              x[slideIndex - 1].style.display = "block";  
             }
             $('#twidget').twidget({
                 locale: 'en',
