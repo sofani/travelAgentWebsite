@@ -243,7 +243,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
 }
 
 #logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
+  background: url('../images/world.png') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -316,8 +316,9 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
   margin-bottom: 35px;
 }
 #hours, #address, #testimonials {
-  line-height: 2;
-  color: white;
+  line-height: 1.5;
+ color: #951C49;
+ font-size: 1.3em;
 }
 #hours > span, #address > span, #testimonials >span{
   font-size: 1.3em;
@@ -335,7 +336,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
   margin-top: 25px;
 }
 .text-center {
-	color: white;
+	color: black;
 }
 /* END FOOTER */
 

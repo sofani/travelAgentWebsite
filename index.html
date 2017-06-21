@@ -7,6 +7,7 @@
      <title>Elfay Travel Agent</title>
 
     <!--adding css files-->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -84,6 +85,17 @@
           </div><!-- .collapse .navbar-collapse -->
        </div><!-- .container -->
     </nav><!-- #header-nav -->
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/img_fjords.jpg" style="width:110%; margin-left: -50px;">
+        <img class="mySlides" src="images/img_lights.jpg" style="width:110%;  margin-left: -50px;">
+        <img class="mySlides" src="images/img_mountains.jpg" style="width:110%;  margin-left: -50px;">
+        <img class="mySlides" src="images/img_forest.jpg" style="width:110%;  margin-left: -50px;">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <br>
     <div class="container" >
        <div class="row" >
           
@@ -101,18 +113,19 @@
           <div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 col-xxs-12" class="twidget-container" id="twidget"> </div>
       </div>
     </div>
-
+    
+    
 
      <div class="panel-footer" class="container" style=" background-color: #f6b319;">
           <div class="row">
-            <section id="hours" class="col-sm-4">
+            <section id="hours" class="col-sm-3">
               <span>Hours:</span><br>
               Mon-Fri: 10:15am - 7:00pm<br>
               Sat: 10:15am - 2:30pm<br>
               Sunday Closed
               <hr class="visible-xs">
             </section>
-            <section id="address" class="col-sm-4">
+            <section id="address" class="col-sm-3">
               <span>Address:</span><br>
                  6370 W. Flamingo Rd.  Suite-3<br>
                  Las Vegas, NV 89103<br>
@@ -122,7 +135,7 @@
              
               <hr class="visible-xs">
             </section>
-            <section id="testimonials" class="col-sm-4">
+            <section id="testimonials" class="col-sm-6">
                <span>Here's what our clients have to say:</span><br>
               <p>When we arrived at our hotel, 13,000 miles away from home, and they didn't have our reservation on file, I immediately called Best value. Within minutes we were enjoying our comfortableroom. Now that's service!<br>
                 Getenet Asefa<br>
@@ -133,13 +146,31 @@
             </section>
           </div>
  
-           <h4 style="text-align: center; color: white;"> All-inclusive specials gateaways to Africa available now. Call us today and don't delay!
+           <h4 style="text-align: center; color: black;"> All-inclusive specials gateaways to Africa available now. Call us today and don't delay!
             <strong>702-253-0103</strong></h4>
            
           <div class="text-center">&copy; Copyright 2017</div>
  </div>
     
     <script>
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
             $('#twidget').twidget({
                 locale: 'en',
                 marker: 78606,
@@ -147,6 +178,9 @@
                 default_destination: 'ASMARA',
                 default_hotel_location: 'ASMARA'
             });
+
+
+            
     </script>
     </body>
 </html>
