@@ -86,64 +86,35 @@
        </div><!-- .container -->
     </nav><!-- #header-nav -->
      <br>
-    <div class="container" >
-    
-          <section class="insert">
-  
-    <form action="upload/insert" method="post" enctype="multipart/form-data">
-        <div class="input">
-            <label for="title">First Name: </label>
-            <input type="text" id="title" name="title">
-        </div>
-        <div class="input">
-            <label for="content">Last Name:</label>
-            <input type="text" id="content" name="content">
-        </div>
-        <div class="input">
-            <label for="content">Address1:</label>
-            <input type="text" id="content" name="content">
-        </div>
-         <div class="input">
-            <label for="content">Address2:</label>
-            <input type="text" id="content" name="content">
-        </div>
-        <div class="input">
-            <label for="author">City</label>
-            <input type="text" id="author" name="author">
-        </div>
-         <div class="input">
-            <label for="author">State</label>
-            <input type="text" id="author" name="author">
-        </div>
-         <div class="input">
-            <label for="author">Zip Code:</label>
-            <input type="text" id="author" name="author">
-        </div>
-          <div class="input">
-            <label for="author">Day Time Phone:</label>
-            <input type="text" id="author" name="author">
-        </div>
-        <div class="input">
-            <label for="author">Evening Time Phone:</label>
-            <input type="text" id="author" name="author">
-        </div>
-          <div class="input">
-            <label for="author">Email:</label>
-            <input type="text" id="author" name="author">
-        </div>
-        <div class="input">
-            <label for="author">Comments:</label>
-            <textarea type="textBox" id="author" name="author"></textarea>
-        </div>
-       
-        <button type="submit">Submit</button>
-         <button type="submit">Reset</button>
-    </form>
-</section>
-     
-      </div>
+    <div class="contact" >
+
+<h3>Contact Form</h3>
+
+
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
  
-    
+ 
+    </div>
     
 
      <div class="panel-footer" class="container" style=" background-color: #f6b319;">
