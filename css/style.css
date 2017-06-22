@@ -260,7 +260,27 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
   height: 350px;
   margin: 10px 15px 10px 0;
 }
-
+#dest-img {
+ background: url('../images/dest1.jpg') no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: 10px 15px 10px 0;
+  border-radius: 100%;
+}
+#dest1-img {
+ background: url('../images/dest2.jpg') no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: 10px 15px 10px 0;
+   border-radius: 100%;
+}
+#dest2-img {
+ background: url('../images/dest3.jpg') no-repeat;
+  width: 400px;
+  height: 400px;
+  margin: 10px 15px 10px 0;
+   border-radius: 100%;
+}
 .navbar-brand {
   
   width: 150px;
@@ -368,7 +388,7 @@ div, span, p, ol, ul, li, table, tbody, tfoot, thead, tr, th, td{
   border: 2px solid #3F0C1F;
   overflow: hidden;
   border-radius: 5%;
-  color: black;
+  color: #e5e5e5;
 
 
 }
